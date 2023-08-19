@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/yesid-portfolio/',
+    base: '/',
   }
 
   if (command !== 'serve') {
