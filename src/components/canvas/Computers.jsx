@@ -3,8 +3,9 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Computers = ( isMobile ) => {
-  const Computer = useGLTF("./desktop_pc/scene.gltf");
+const Computers = (isMobile) => {
+  const computer = useGLTF("./desktop_pc/scene.gltf");
+  console.log(isMobile.isMobile)
 
   return (
     <mesh>
@@ -17,9 +18,9 @@ const Computers = ( isMobile ) => {
         intensity={1}
       />
       <primitive
-        object={Computer.scene}
-        scale={isMobile ? 0.75 :0.5}
-        position={isMobile ? [0, -3, -2.2]:[0, -3.5, -1.5]}
+        object={computer.scene}
+        scale={isMobile.isMobile ? 0.4 : 0.7}
+        position={isMobile.isMobile ? [0, -2, -0.75] : [0, -3, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -30,24 +31,24 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia(`(max-width: 700px)`);
 
     setIsMobile(mediaQuery.matches);
 
-    const handleMediaQuertChange = (e) => {
-      setIsMobile(e.matches);
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches)
+    };
 
-      mediaQuery.addEventListener("change", handleMediaQuertChange);
+      mediaQuery.addEventListener(`change`, handleMediaQueryChange);
 
       return () => {
-        mediaQuery.removeEventListener("change", handleMediaQuertChange);
+        mediaQuery.removeEventListener(`change`, handleMediaQueryChange);
       };
-    };
-  }, []);
+    }, []);
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 30 }}
       gl={{ preserveDrawingBuffer: true }}

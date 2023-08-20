@@ -6,7 +6,7 @@ const Loader = () => {
   return (
     <Html>
       <span className='canva-load'></span>
-      <p className='text-[14px] taxt-[#f1f1f1] font-[800] mt-40'>{progress.toFixed(2)}%</p>
+      <p className='text-[14px] taxt-[#f1f1f1] font-[800] mt-40'>{progress.toFixed(0)}%</p>
     </Html>
     )
 }
