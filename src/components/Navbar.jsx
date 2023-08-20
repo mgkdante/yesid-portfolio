@@ -26,7 +26,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-100 h-100 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Yesid <span className="sm:block hidden">Otalora</span>
+            Wowwww&nbsp;<span className="text-[#e77917]">sites</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
