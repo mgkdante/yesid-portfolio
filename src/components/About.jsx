@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../animation";
-import {SectionWrapper}  from "../hoc/index";
+import { SectionWrapper } from "../hoc/index";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (

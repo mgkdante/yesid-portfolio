@@ -33,14 +33,14 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.orange-gradient {
-  background: #e77917;
+.purple-gradient {
+  background: #400E58;
   background: -webkit-linear-gradient(
     -90deg,
-    #e77917 0%,
-    rgba(60, 51, 80, 0) 100%
+    #400E58 0%,
+    rgba(240,11, 81, 0) 100%
   );
-  background: linear-gradient(-90deg, #e77917 0%, rgba(60, 51, 80, 0) 100%);
+  background: linear-gradient(-90deg, #400E58 0%, rgba(240, 11, 81, 0) 100%);
 }
 
 .green-pink-gradient {
