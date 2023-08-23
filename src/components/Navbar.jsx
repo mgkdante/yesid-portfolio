@@ -26,7 +26,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-100 h-100 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Wowwww&nbsp;<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">sites</span>
+            Wowwww&nbsp;<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">sites</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">

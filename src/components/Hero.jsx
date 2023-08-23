@@ -15,10 +15,10 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi! I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Yesid</span>
+            Hi! I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">Yesid</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Frontend Developer</span>{" "}
+            I'm a <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">Frontend Developer</span>{" "}
             based in Quebec, I love to create beautiful and functional websites.
           </p>
         </div>
