@@ -23,6 +23,7 @@ import threejs from "./tech/threejs.svg";
 
 
 import gem from "./company/gem.png";
+import themlabs from "./company/themlabs.png";
 
 
 import carrent from "./carrent.png";
@@ -52,6 +53,7 @@ export {
   typescript,
   threejs,
   gem,
+  themlabs,
   carrent,
   jobit,
   tripguide,

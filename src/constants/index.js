@@ -16,6 +16,7 @@ import {
   figma,
   docker,
   gem,
+  themlabs,
   carrent,
   jobit,
   tripguide,
@@ -115,8 +116,8 @@ const experiences = [
   {
     title: "Web developer",
     company_name: "Themlabs.ca",
-    icon: gem,
-    iconBg: "#383E56",
+    icon: themlabs,
+    iconBg: "#000000",
     date: "May 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js, Angular, Svelte and other related technologies.",

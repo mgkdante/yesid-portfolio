@@ -10,8 +10,8 @@ const Hero = () => {
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex fex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-purple-400" />
-          <div className="w-1 sm:h-80 h-40 purple-gradient" />
+          <div className="w-5 h-5 rounded-full green-pink-gradient" />
+          <div className="w-1 sm:h-80 h-40 green-pink-gradient" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
