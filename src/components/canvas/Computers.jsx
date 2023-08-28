@@ -14,7 +14,7 @@ const Computers = (isMobile) => {
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
-        penumbra={1}
+        penumbra={80}
         intensity={1}
       />
       <primitive
