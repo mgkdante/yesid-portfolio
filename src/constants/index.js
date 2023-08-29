@@ -4,23 +4,21 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
-  docker,
   gem,
   themlabs,
   carrent,
   jobit,
   tripguide,
   threejs,
+  sqllite,
+  sqlserver
 } from "../assets";
 
 export const navLinks = [
@@ -71,16 +69,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -89,10 +79,6 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "Three JS",
@@ -107,8 +93,12 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "SQL Server",
+    icon: sqlserver,
+  },
+  {
+    name: "SQL Lite",
+    icon: sqllite,
   },
 ];
 
