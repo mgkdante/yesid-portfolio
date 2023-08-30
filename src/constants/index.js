@@ -18,7 +18,8 @@ import {
   artistic,
   threejs,
   sqllite,
-  sqlserver
+  sqlserver,
+  logo
 } from "../assets";
 
 export const navLinks = [
@@ -105,8 +106,8 @@ const technologies = [
 const experiences = [
   {
     title: "Web developer",
-    company_name: "Themlabs.ca",
-    icon: themlabs,
+    company_name: "Freelancer",
+    icon: logo,
     iconBg: "#000000",
     date: "May 2023 - Present",
     points: [
