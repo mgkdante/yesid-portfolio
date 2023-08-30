@@ -8,9 +8,9 @@ export default defineConfig(({ command }) => {
     base: '/',
   }
 
-  if (command !== 'serve') {
+ /* if (command !== 'serve') {
     config.base = '/yesid-portfolio/'
-  }
+  }*/
 
   return config
 })
