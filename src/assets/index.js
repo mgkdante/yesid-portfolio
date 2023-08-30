@@ -23,9 +23,9 @@ import gem from "./company/gem.png";
 import themlabs from "./company/themlabs.png";
 
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import piscineaide from "./piscineaide.png";
+import artistic from "./artistic.png";
+import android from "./android.jpg";
 
 export {
   logo,
@@ -47,9 +47,9 @@ export {
   threejs,
   gem,
   themlabs,
-  carrent,
-  jobit,
-  tripguide,
+  piscineaide,
+  artistic,
+  android,
 
   sqllite,
   sqlserver

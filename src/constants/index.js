@@ -13,9 +13,9 @@ import {
   figma,
   gem,
   themlabs,
-  carrent,
-  jobit,
-  tripguide,
+  piscineaide,
+  android,
+  artistic,
   threejs,
   sqllite,
   sqlserver
@@ -123,108 +123,40 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "May 2021 - Present",
     points: [
-      "Optimizing database performance and ensuring data integrity", 
-      "Creating and maintaining database documentation", 
-      "Collaborating with other developers and stakeholders to design and implement database solutions", 
-      "Troubleshooting and resolving database issues", 
-      "Developing and maintaining ETL processes", 
-      "Implementing security measures to protect sensitive data", 
+      "Optimizing database performance and ensuring data integrity",
+      "Creating and maintaining database documentation",
+      "Collaborating with other developers and stakeholders to design and implement database solutions",
+      "Troubleshooting and resolving database issues",
+      "Developing and maintaining ETL processes",
+      "Implementing security measures to protect sensitive data",
       "Staying up-to-date with emerging trends and technologies in database development"
     ],
   }
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Yesid proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Yesid does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Yesid optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Video Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+      "I had a lot of fun creating a website for a video artist. My main focus was on creating a visually stunning and immersive experience that would showcase the artist's work in the best possible light. To achieve this, I used cutting-edge web technologies to create a dynamic and interactive website that would engage visitors and leave a lasting impression.",
+    image: artistic,
+    source_code_link: "https://mgkdante.github.io/yesid-artistic/",
   },
   {
-    name: "Job IT",
+    name: "Piscine-Aide",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    "It was challenging coming up with a design for a pool store. My main focus was on creating a user-friendly and informative website that would help customers find the products and services they need."
+    ,image: piscineaide,
+    source_code_link: "https://mgkdante.github.io/yesid-piscine/",
   },
   {
-    name: "Trip Guide",
+    name: "Android Projects",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    "I've created apps that touch on different aspects of Android development, such as UI design, database management, and network communication. Each project has presented its own unique challenges and has allowed me to develop my skills as an Android developer."
+    ,image: android,
+    source_code_link: "https://github.com/mgkdante?tab=repositories",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

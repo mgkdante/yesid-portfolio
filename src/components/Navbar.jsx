@@ -34,8 +34,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600" : "text-white"
+              } hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -59,8 +59,8 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  } hover:text-white font-medium cursor-pointer text-[16px]`}
+                    active === nav.title ? "text-text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600" : "text-white"
+                  } hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
