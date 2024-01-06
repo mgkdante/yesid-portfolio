@@ -5,10 +5,7 @@ const App = () => {
     return (
         <BrowserRouter /*basename={import.meta.env.DEV ? '/' : '/yesid-portfolio/'}*/>
             <div className="relative z-0 bg-primary">
-                <div>
-                    <Navbar/>
-
-                </div>
+                <Navbar/>
                 <div className="relative z-0">
                     <Hero/>
                     <About/>
