@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "predeploy": "npm run build",
     "add-domain": "echo 'www.yesid.dev' > ./dist/CNAME",
     "deploy": "npm run add-domain && gh-pages -d dist",
