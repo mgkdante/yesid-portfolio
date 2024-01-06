@@ -5,7 +5,6 @@ import CanvasLoader from "../Loader";
 
 const Computers = (isMobile) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
-  console.log(isMobile.isMobile)
 
   return (
     <mesh>
@@ -51,13 +50,14 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 30 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ preserveDrawingBuffer: true, alpha: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          enablePan={false}
         />
         <Computers isMobile={isMobile}/>
       </Suspense>

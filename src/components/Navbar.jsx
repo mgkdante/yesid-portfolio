@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav
       className={
-        `${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`
+        `${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-opacity-60 backdrop-blur-md`
       }
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -24,18 +24,15 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-100 h-100 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Wowwww&nbsp;<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">sites</span>
-          </p>
+          <img src={logo} alt="logo" className="w-[120px] h-[100px]" />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600" : "text-white"
-              } hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "font-bold" : "font-medium"
+              } hover:font-bold text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -59,8 +56,8 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`${
-                    active === nav.title ? "text-text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600" : "text-white"
-                  } hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 font-medium cursor-pointer text-[16px]`}
+                    active === nav.title ? "font-bold" : "text-white"
+                  } hover:font-bold font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);

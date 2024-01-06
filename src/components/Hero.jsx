@@ -11,7 +11,7 @@ const Hero = () => {
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi! I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">Yesid</span>
+            Hi! I'm Yesid
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm a <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">Frontend Developer</span>{" "}
@@ -39,7 +39,7 @@ const Hero = () => {
                 duration: 4,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-[#f00b51] mb-1"
+              className="w-3 h-3 rounded-full bg-white mb-1"
             />
           </div>
         </a>
