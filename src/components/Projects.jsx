@@ -8,9 +8,7 @@ import {SectionWrapper} from "../hoc";
 import {projects} from "../constants";
 import {fadeIn, textVariant} from "../animation"
 
-const ProjectCard = ({
-                         index, name, description, image, source_code_link, demo_link,
-                     }) => {
+const ProjectCard = ({ index, name, description, image, source_code_link, demo_link,}) => {
     const handleCardClick = () => {
         console.log("card clicked");
         window.open(demo_link, "_blank");
