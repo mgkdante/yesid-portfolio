@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite --host",
     "predeploy": "npm run build",
-    "add-domain": "echo 'www.yesid.dev' > ./dist/CNAME",
+    "add-domain": "echo 'yesid.dev' > ./dist/CNAME",
     "deploy": "npm run add-domain && gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
