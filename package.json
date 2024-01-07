@@ -17,14 +17,18 @@
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.80.3",
     "@react-three/fiber": "^8.13.7",
-    "framer-motion": "^10.16.0",
+    "clsx": "^2.1.0",
+    "framer-motion": "^10.17.9",
     "maath": "^0.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.181",
     "react-router-dom": "^6.15.0",
-    "react-tilt": "^1.0.2",
+    "react-tsparticles": "^2.12.2",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.155.0"
+    "tailwind-merge": "^2.2.0",
+    "three": "^0.155.0",
+    "tsparticles-preset-triangles": "^2.12.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

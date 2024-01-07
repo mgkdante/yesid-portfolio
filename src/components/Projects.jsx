@@ -1,5 +1,5 @@
 import React from "react";
-import {Tilt} from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import {motion} from "framer-motion";
 
 import {styles} from "../styles";
@@ -21,9 +21,6 @@ const ProjectCard = ({ index, name, description, image, source_code_link, demo_l
 
     return (<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <Tilt
-            options={{
-                max: 45, scale: 1, speed: 450,
-            }}
             className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full shadow-card backdrop-blur-md bg-opacity-60 flex flex-col justify-between items-center'>
             <div onClick={handleCardClick} className="cursor-pointer">
                 <div className='relative w-full h-[230px]'>
@@ -79,7 +76,7 @@ const Projects = () => {
             </motion.p>
         </div>
 
-        <div className='mt-20 flex flex-wrap gap-7'>
+        <div className='mt-20 flex flex-wrap justify-center gap-7'>
             {projects.map((project, index) => (<ProjectCard key={`project-${index}`} index={index} {...project} />))}
         </div>
     </>);
