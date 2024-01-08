@@ -23,7 +23,7 @@ const Overview = () => {
         {overview.description}
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-20 justify-evenly">
+      <div className="mt-20 flex flex-wrap justify-evenly">
         {skills.map((service, index) => (
           <InfoCard
             key={service.title}

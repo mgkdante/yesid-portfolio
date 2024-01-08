@@ -48,7 +48,7 @@ const hero = {
   title: "Hi, I'm Yesid",
   role: "An App Developer ",
   description:
-    "from Sherbrooke, Canada, I aspire to help others offer great solutions with a strong focus on user events and maintainable code.",
+    "from Montreal, Canada, I aspire to help others offer great solutions with a strong focus on user events and maintainable code.",
 };
 
 const overview = {
@@ -205,7 +205,7 @@ const events = [
   {
     title: "Got grounded",
     subtitle:
-      "While I was curious and wanted to learn, I was also a kid with shenanigans and I got grounded for a while. I had to stop using the computer for a while",
+      "While I was curious and eager to learn, I was also a kid who loved mischief. This led to me being grounded and I had to refrain from using the computer for some time",
     icon: notAllowed,
     date: "2010",
   },
@@ -253,7 +253,7 @@ const events = [
     title: "Computer Science",
     subtitle: "Bishop's University",
     icon: bu,
-    date: "2018 - 2019",
+    date: "2019 - 2022",
     points: [
       "Back to where my heart longed for, I started my journey in Computer Science",
       "Learned the basics of programming with Java and C++",
