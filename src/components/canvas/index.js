@@ -1,5 +1,4 @@
 import EarthCanvas from "./Earth";
-import ComputersCanvas from "./Computers";
-import StarsCanvas from "./Stars";
+import ComputersCanvas from "./Computer.jsx";
 
-export { EarthCanvas, ComputersCanvas, StarsCanvas };
+export { EarthCanvas, ComputersCanvas };

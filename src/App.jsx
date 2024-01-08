@@ -60,14 +60,13 @@ const App = () => {
           init={particlesInit}
         />
         <Navbar />
-        <div className="relative z-0">
+        <div className="relative z-0 px-2">
           <Hero />
           <About />
           <Experience />
           <Tech />
           <Works />
           <Contact />
-          {/*<StarsCanvas/>*/}
         </div>
       </div>
     </BrowserRouter>

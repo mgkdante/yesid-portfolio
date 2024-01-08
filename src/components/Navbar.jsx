@@ -11,9 +11,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={
-        `${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-opacity-60 backdrop-blur-md`
-      }
+      className={`${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-opacity-60 backdrop-blur-md`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -39,7 +37,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="sm:hidden flex items-center flex-1 justify-end">
+        <div className="sm:hidden flex items-center flex-1 justify-end pr-2">
           <img
             src={toggle ? close : menu}
             alt="menu"

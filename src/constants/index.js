@@ -1,8 +1,13 @@
 import {
+  accounting,
   backend,
+  bu,
+  champlain,
+  chromeLogo,
   computer,
   css,
   dialUp,
+  firefox,
   gem,
   git,
   github,
@@ -11,22 +16,17 @@ import {
   ie,
   javascript,
   logo,
+  mangakaLatino,
   nodejs,
+  notAllowed,
   reactjs,
   sql,
   sqlserver,
-  todoapp,
-  web,
-  firefox,
-  ubuntu,
-  mangakaLatino,
-  chromeLogo,
-  vaio,
-  notAllowed,
-  champlain,
   themsocks,
-  accounting,
-  bu,
+  todoapp,
+  ubuntu,
+  vaio,
+  web,
 } from "../assets";
 
 export const navLinks = [
@@ -44,39 +44,71 @@ export const navLinks = [
   },
 ];
 
-const services = [
+const hero = {
+  title: "Hi, I'm Yesid",
+  role: "An App Developer ",
+  description:
+    "from Sherbrooke, Canada, I aspire to help others offer great solutions with a strong focus on user events and maintainable code.",
+};
+
+const overview = {
+  title: "Overview",
+  subtitle: "What I offer",
+  description:
+    "Welcome to my portfolio! As a Bishop's University Computer Science alum, I'm passionate about advancing in the ever-evolving tech world. Eager for software development opportunities, I'm committed to contributing to innovation and supporting the growth of communities and businesses in Canada. Here's a showcase of my key skills and areas of growth.",
+};
+
+const eventsTitle = {
+  title: "Events",
+  subtitle: "My journey",
+};
+
+const techTitle = {
+  title: "Stack",
+  subtitle: "knowledge",
+};
+
+const projectsTitle = {
+  title: "Projects",
+  subtitle: "My work",
+  description: `As a hobbyist developer, I have developed some projects using
+                different technologies. From this portfolio using React and Vite to
+                some projects using vanilla JavaScript and CSS.
+                <br />
+                <br />
+                In addition to web development, I've also worked on some Android
+                projects using Android Compose.
+                <br />
+                <br />
+                These projects have been a great way for me to develop my skills as a
+                developer and explore my passion for creating innovative solutions.
+                I'm excited to continue working on new projects and pushing the
+                boundaries of what's possible with web and mobile development.`,
+};
+
+const contactTitle = {
+  title: "Contact",
+  subtitle: "Get in touch",
+};
+
+const skills = [
   {
     title: "Front-End Developer",
     icon: web,
     whyTitle: "What I love about the Front-End",
-    why:
-      "What I really love about the Front-End is telling a story with code. " +
-      "We want users to feel a certain way when using our applications and I love that through abstraction " +
-      "I can be able to pass on a feeling to anyone who uses my applications." +
-      "In my personal life, I always look to reduce friction and make things easier for my family and friends and I believe that Front-End development is a great way to do that.",
+    why: "I'm passionate about Front-End development because it allows me to tell stories through code, creating emotional connections with users. Just as I simplify daily interactions in my personal life, I use Front-End development to enhance user experiences and make things easier for others.",
     whatTitle: "What I have tried",
-    what:
-      "I have tried many different frameworks and libraries such as React, Svelte and Django for Python. " +
-      "I have also tried many different styling libraries such as Tailwind CSS, Bootstrap, and Material U (Google). " +
-      "On the design side I have tried Figma and Adobe XD and I while I choose Figma, I am still learning and trying to improve my design skills.",
+    what: "I've explored various frameworks like React, and Django, along with styling libraries including Tailwind CSS, Bootstrap, and Material U. For design, I've used Figma and Adobe XD, preferring Figma while continuing to enhance my design skills.",
     challenge:
-      "But I know there is so much more to uncover and learn but also so much to tell.",
+      "I'm aiming to develop applications that address user problems, understand their needs, and ensure a comfortable user events.",
   },
   {
     title: "SQL Developer",
     icon: sql,
     whyTitle: "What I love about SQL",
-    why:
-      "SQL is a very powerful language that allows us to store and retrieve data. " +
-      "What I think is interesting about SQL is its simplicity yet its power to do so much. " +
-      "I like the ease of use but also the customization that SQL provides performance wise and data wise." +
-      "DSA comes into play when we want to optimize our queries and I think that is very interesting.",
+    why: "SQL's strength lies in its simple yet powerful ability to store, retrieve, and customize data efficiently. Its ease of use and performance optimization, especially with Data Structure Algorithms (DSA) for query enhancement, are particularly fascinating.",
     whatTitle: "What I have tried",
-    what:
-      "Since I currently work as a SQL developer and my workplace use SQL Server, I have become quite adept at SQL Server, SSRS and a little in SSIS" +
-      "In my free time working with other projects I have also tried MySQL and SQLLite." +
-      "I have also tried my hand at different abstractions such as ORM with Android (Room) and Django." +
-      "Little extra: I have also tried NoSQL and Firebase.",
+    what: "As a SQL developer skilled in SQL Server, SSRS, and some SSIS, I've also experimented with MySQL and SQLite in my personal projects. Additionally, I've explored ORM abstractions in Android (Room) and Django, as well as delving into NoSQL and Firebase.",
     challenge:
       "Really looking forward to make SQL second nature and be able to craft beautiful apps from the database to the UI ",
   },
@@ -84,15 +116,9 @@ const services = [
     title: "Back-End Developer",
     icon: backend,
     whyTitle: "What I love about the Back-End",
-    why:
-      "What I like about the Back-End, is that while it is very abstract and not as visual as the Front-End, " +
-      "You can yet build beautiful things with beautiful code that is useful to the user." +
-      "I believe that a VERY good back-end developer has the power to change many lives and I strive (patiently) but surely everyday to be one of those people.",
+    why: "I appreciate the Back-End for its abstract, non-visual nature, where beautiful and functional code can significantly impact users. I'm patiently striving to become a top-tier back-end developer capable of changing lives with my work.",
     whatTitle: "What I have tried",
-    what:
-      "Back-end development is my least experienced area but I have tried a couple of different frameworks and libraries such as Django Rest Framework, and ExpressJS" +
-      "But enough to be able to build a REST API and connect it to a database. I am currently following The Odin Project to learn more about back-end development." +
-      "While I might not be able to build a full back-end application YET, I am confident in my path and I know that I will be able to build a full back-end application soon.",
+    what: "My events in back-end development, though limited, includes working with frameworks like Django Rest Framework and ExpressJS, enough to build a REST API and connect it to a database. I'm enhancing my skills through The Odin Project, confident that soon I'll be capable of developing a complete back-end application.",
     challenge:
       "My goal this year 2024, is to build a full-stack that solves an actual issue.",
   },
@@ -129,70 +155,70 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const events = [
   {
     title: "First time using a computer",
-    company_name: "The start of my journey",
+    subtitle: "The start of my journey",
     icon: computer,
     date: "2003",
   },
   {
     title: "First time using the internet",
-    company_name: "Played the heck out of flash games",
+    subtitle: "Played the heck out of flash games",
     icon: dialUp,
     date: "2005",
   },
   {
     title: "We get internet at home",
-    company_name: "Okay, my world just got x1000 bigger",
+    subtitle: "Okay, my world just got x1000 bigger",
     icon: ie,
     date: "2007",
   },
   {
     title: "Downloaded Mozilla Firefox",
-    company_name:
+    subtitle:
       "Alright, this looks faster than IE and the toolbar is way less cluttered",
     icon: firefox,
     date: "2007",
   },
   {
     title: "Chrome is released",
-    company_name:
+    subtitle:
       "Hmm, this is clutter free and fast. I'm switching to this browser and won't switch for a while",
     icon: chromeLogo,
     date: "2008",
   },
   {
     title: "Ordered Ubuntu 9.04",
-    company_name:
+    subtitle:
       "This let's me apply UI themes and I can customize my desktop. I'm in love (CD shipping used to be free)",
     icon: ubuntu,
     date: "2009",
   },
   {
     title: "My first website",
-    company_name:
+    subtitle:
       "To be young and curious, I made a site to stream anime online, www.mangaka-latino.es.tl. Beautiful times",
     icon: mangakaLatino,
     date: "2009 - 2010",
   },
   {
     title: "Got grounded",
-    company_name:
+    subtitle:
       "While I was curious and wanted to learn, I was also a kid with shenanigans and I got grounded for a while. I had to stop using the computer for a while",
     icon: notAllowed,
     date: "2010",
   },
   {
     title: "Purchased my first laptop",
-    company_name:
+    subtitle:
       "Worked my first summer at 15 years old and purchased my first laptop. I was so happy to have my own computer and I could do whatever I wanted with it. Still have it for nostalgia",
     icon: vaio,
     date: "2011",
   },
   {
     title: "Studied Accounting and Management technology",
-    company_name: "Champlain Regional College",
+    subtitle: "Champlain Regional College",
     icon: champlain,
     date: "2014 - 2017",
     points: [
@@ -203,7 +229,7 @@ const experiences = [
   },
   {
     title: "Started my first business",
-    company_name: "Themsocks.ca",
+    subtitle: "Themsocks.ca",
     icon: themsocks,
     date: "2018 - 2020",
     points: [
@@ -214,7 +240,7 @@ const experiences = [
   },
   {
     title: "Accounting clerk",
-    company_name: "Service d'administration Marcoux",
+    subtitle: "Service d'administration Marcoux",
     icon: accounting,
     date: "2018 - 2019",
     points: [
@@ -225,7 +251,7 @@ const experiences = [
   },
   {
     title: "Computer Science",
-    company_name: "Bishop's University",
+    subtitle: "Bishop's University",
     icon: bu,
     date: "2018 - 2019",
     points: [
@@ -236,7 +262,7 @@ const experiences = [
   },
   {
     title: "SQL developer",
-    company_name: "Global Excel Management",
+    subtitle: "Global Excel Management",
     icon: gem,
     date: "May 2021 - Present",
     points: [
@@ -249,7 +275,7 @@ const experiences = [
   },
   {
     title: "App developer",
-    company_name: "Hobby",
+    subtitle: "Hobby",
     icon: logo,
     date: "Sept 2021 - Present",
     points: [
@@ -288,4 +314,31 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+const contactFormFields = {
+  name: {
+    label: "Your Name",
+    placeholder: "What's your good name?",
+  },
+  email: {
+    label: "Your Email",
+    placeholder: "What's your web address?",
+  },
+  message: {
+    label: "Your Message",
+    placeholder: "What you want to say?",
+  },
+};
+
+export {
+  skills,
+  technologies,
+  events,
+  projects,
+  hero,
+  overview,
+  eventsTitle,
+  techTitle,
+  projectsTitle,
+  contactTitle,
+  contactFormFields,
+};

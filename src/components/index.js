@@ -1,11 +1,11 @@
-import { EarthCanvas, ComputersCanvas, StarsCanvas } from './canvas';
-import Hero from './Hero';
-import Navbar from './Navbar';
-import About from './About';
-import Tech from './Tech';
-import Experience from './Experience';
-import Works from './Projects.jsx';
-import Contact from './Contact';
+import { EarthCanvas, ComputersCanvas } from "./canvas";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import About from "./Overview.jsx";
+import Tech from "./Tech";
+import Experience from "./Events.jsx";
+import Works from "./Projects.jsx";
+import Contact from "./Contact";
 
 export {
   Hero,
@@ -15,7 +15,6 @@ export {
   Experience,
   Works,
   Contact,
-  EarthCanvas, 
+  EarthCanvas,
   ComputersCanvas,
-  StarsCanvas
-}
+};
