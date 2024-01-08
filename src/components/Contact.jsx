@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden mb-16`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -67,7 +67,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-12 flex flex-col gap-8 flex-grow"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">

@@ -202,13 +202,13 @@ const events = [
     icon: mangakaLatino,
     date: "2009 - 2010",
   },
-  {
+  /* {
     title: "Got grounded",
     subtitle:
       "While I was curious and eager to learn, I was also a kid who loved mischief. This led to me being grounded and I had to refrain from using the computer for some time",
     icon: notAllowed,
     date: "2010",
-  },
+  },*/
   {
     title: "Purchased my first laptop",
     subtitle:

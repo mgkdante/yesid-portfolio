@@ -11,7 +11,7 @@ const Overview = () => {
   const [openCardIndex, setOpenCardIndex] = useState(null);
 
   return (
-    <div>
+    <motion.div>
       <motion.div>
         <p className={styles.sectionSubText}>{overview.subtitle}</p>
         <h2 className={styles.sectionHeadText}>{overview.title}</h2>
@@ -23,7 +23,7 @@ const Overview = () => {
         {overview.description}
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap justify-evenly">
+      <motion.div className="mt-20 flex flex-wrap justify-evenly">
         {skills.map((service, index) => (
           <InfoCard
             key={service.title}
@@ -34,8 +34,8 @@ const Overview = () => {
             setOpenCardIndex={setOpenCardIndex}
           />
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

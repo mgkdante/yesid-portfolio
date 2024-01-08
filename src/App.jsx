@@ -11,6 +11,7 @@ import {
 
 import Particles from "react-tsparticles";
 import { loadTrianglesPreset } from "tsparticles-preset-triangles";
+import { LayoutGroup } from "framer-motion";
 
 const App = () => {
   const particlesInit = (tsParticles) => {
@@ -61,12 +62,14 @@ const App = () => {
         />
         <Navbar />
         <div className="relative z-0 pt-[100px] px-2 md:px-4 lg:px-6 xl:px-8 mx-auto max-w-screen-xl">
-          <Hero />
-          <About />
-          <Experience />
-          <Tech />
-          <Works />
-          <Contact />
+          <LayoutGroup>
+            <Hero />
+            <About />
+            <Experience />
+            <Tech />
+            <Works />
+            <Contact />
+          </LayoutGroup>
         </div>
       </div>
     </BrowserRouter>

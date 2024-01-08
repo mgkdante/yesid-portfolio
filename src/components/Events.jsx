@@ -59,7 +59,7 @@ const EventCard = ({ events }) => (
 
 const Events = () => {
   return (
-    <>
+    <motion.div layout>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>{eventsTitle.subtitle}</p>
         <h2 className={styles.sectionHeadText}>{eventsTitle.title}</h2>
@@ -71,7 +71,7 @@ const Events = () => {
           <EventCard key={index} events={events} />
         ))}
       </VerticalTimeline>
-    </>
+    </motion.div>
   );
 };
 

@@ -24,7 +24,7 @@ export const InfoCard = ({
   const isOpen = openCardIndex === index;
 
   return (
-    <div onClick={onClick}>
+    <motion.div layout>
       <motion.div
         layout
         className={`${
@@ -33,18 +33,19 @@ export const InfoCard = ({
       >
         <motion.div
           variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-          className={`w-full rounded-[20px] shadow-card ${
-            isClickable ? "cursor-pointer" : ""
-          }`}
+          className={`w-full rounded-[20px] shadow-card`}
         >
           <motion.div
+            onClick={onClick}
             options={{
               max: 45,
               scale: 1,
               speed: 450,
             }}
-            className={`bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center
-                        flex-col backdrop-blur-md bg-opacity-60`}
+            className={`my-5 bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center
+                        flex-col backdrop-blur-md bg-opacity-60  ${
+                          isClickable ? "cursor-pointer" : ""
+                        }`}
           >
             <motion.img
               layout={"position"}
@@ -58,6 +59,27 @@ export const InfoCard = ({
             >
               {title}
             </motion.h3>
+            {isClickable && (
+              <motion.div
+                animate={{ rotate: isOpen ? 180 : 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className="w-6 h-6 text-white"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </motion.div>
+            )}
             <br />
             {isOpen && (
               <motion.div
@@ -78,6 +100,6 @@ export const InfoCard = ({
           </motion.div>
         </motion.div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
