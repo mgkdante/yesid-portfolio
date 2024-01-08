@@ -75,4 +75,4 @@ const Events = () => {
   );
 };
 
-export default SectionWrapper(Events, "work");
+export default SectionWrapper(Events, "events");

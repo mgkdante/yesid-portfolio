@@ -39,4 +39,4 @@ const Overview = () => {
   );
 };
 
-export default SectionWrapper(Overview, "about");
+export default SectionWrapper(Overview, "overview");
