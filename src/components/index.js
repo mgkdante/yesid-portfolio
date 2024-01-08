@@ -6,6 +6,7 @@ import Tech from "./Tech";
 import Experience from "./Events.jsx";
 import Works from "./Projects.jsx";
 import Contact from "./Contact";
+import Footer from "./Footer.jsx";
 
 export {
   Hero,
@@ -17,4 +18,5 @@ export {
   Contact,
   EarthCanvas,
   ComputersCanvas,
+  Footer,
 };

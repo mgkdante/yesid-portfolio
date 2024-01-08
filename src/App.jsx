@@ -7,6 +7,7 @@ import {
   Experience,
   Tech,
   Navbar,
+  Footer,
 } from "./components";
 
 import Particles from "react-tsparticles";
@@ -69,6 +70,7 @@ const App = () => {
             <Tech />
             <Works />
             <Contact />
+            <Footer />
           </LayoutGroup>
         </div>
       </div>
