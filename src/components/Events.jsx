@@ -24,7 +24,7 @@ const EventCard = ({ events }) => (
     contentArrowStyle={{ boderRight: "7px solid #232631" }}
     date={events.date}
     iconStyle={{
-      background: "#656565",
+      background: "#1f1f1f",
       backdropFilter: "blur(20px)",
       backgroundColor: "rgba(255, 255, 255, 0.05)",
     }}

@@ -18,8 +18,8 @@ const Computer = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.44 : 1.2} // Make the model bigger on larger screens
-        position={isMobile ? [1.5, -1, -0.5] : [1, -2, -2]} // Center the model in the canvas
+        scale={isMobile ? 0.9 : 1.2} // Make the model bigger on larger screens
+        position={isMobile ? [2, -1, -1] : [1, -2, -2]} // Center the model in the canvas
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -53,11 +53,8 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true, alpha: true }}
       style={{
         height: "40%",
-        width: "80%",
-        position: "absolute",
-        top: isMobile ? "70%" : "50%",
-        left: "50%",
-        transform: isMobile ? "translate(-50%, -60%)" : "translate(-50%, -30%)",
+        width: "100%",
+        position: "relative",
       }}
     >
       <Suspense fallback={<CanvasLoader />}>

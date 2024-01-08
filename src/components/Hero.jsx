@@ -15,13 +15,15 @@ const Hero = () => {
     return () => clearTimeout(timer); // Clear the timer if the component is unmounted
   }, []);
   return (
-    <section className=" w-full h-screen relative mx-auto">
+    <section className="w-full h-[calc(100vh-100px)] flex flex-col justify-between items-center relative mx-auto pb-16">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex fex-row items-start gap-5`}
+        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="text-justify">
           <h2 className={`${styles.heroHeadText} text-white`}>{hero.title}</h2>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p
+            className={`mt-4 text-secondary text-[17px] w-full leading-[30px] text-justify`}
+          >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
               {hero.role}
             </span>{" "}
@@ -30,11 +32,7 @@ const Hero = () => {
         </div>
       </div>
       <ComputersCanvas />
-      <a
-        href="#about"
-        className="z-10 absolute xs:bottom-10 bottom-5 w-full
-        flex justify-center items-center"
-      >
+      <a href="#about" className="z-10 w-full flex justify-center items-center">
         <div
           className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 relative"
           title={"Click here to scroll to next section"}
