@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-opacity-60 backdrop-blur-md`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto px-2 md:px-4 lg:px-6 xl:px-8 mx-auto max-w-screen-lg">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -37,7 +37,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="sm:hidden flex items-center flex-1 justify-end pr-2">
+        <div className="sm:hidden flex items-center flex-1 justify-end pr-5">
           <img
             src={toggle ? close : menu}
             alt="menu"

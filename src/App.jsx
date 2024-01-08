@@ -60,7 +60,7 @@ const App = () => {
           init={particlesInit}
         />
         <Navbar />
-        <div className="relative z-0 px-2">
+        <div className="relative z-0 px-2 md:px-4 lg:px-6 xl:px-8 mx-auto max-w-screen-lg">
           <Hero />
           <About />
           <Experience />
