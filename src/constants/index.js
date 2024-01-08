@@ -291,7 +291,7 @@ const projects = [
   {
     name: "Todo App",
     description:
-      "I had a lot of fun creating a todo list app with vanilla Javascript and CSS. I wanted to tackle this project without using any frameworks or libraries, only webpack, and I'm happy with the result.",
+      "A simple todo list application developed using vanilla JavaScript and CSS. The application allows users to create and edit projects, as well as tasks within those projects. All data is saved in localStorage for persistence. Webpack was used for bundling the application.",
     image: todoapp,
     source_code_link: "https://github.com/mgkdante/todo-app",
     demo_link: "http://mgkdante.github.io/todo-app",
@@ -299,7 +299,7 @@ const projects = [
   {
     name: "Android Habits App",
     description:
-      "This was an Android product that I wanted to do following SOLID principles. I used MVVM architecture, Room, and Dagger Hilt. I also used Kotlin Coroutines for asynchronous programming. I learned a lot about Android development while working on this project.",
+      "An Android application developed using Jetpack Compose and following SOLID principles. The application allows users to track their habits, marking tasks as done for each day and keeping a streak of completed tasks. It uses MVVM architecture, Room for local data storage, Dagger Hilt for dependency injection, and Kotlin Coroutines for asynchronous programming.",
     image: habitapp,
     source_code_link: "https://github.com/mgkdante/HabitsApps",
     demo_link: "https://github.com/mgkdante/HabitsApps",
@@ -307,13 +307,12 @@ const projects = [
   {
     name: "Github Repo",
     description:
-      "If you would like to see more of my projects, you can check out my Github repo. I have a few projects that I'm working on, and I'm always looking for new ideas to work on.",
+      "A collection of various projects hosted on GitHub. The projects use a variety of technologies and frameworks. I'm often working on new projects, which are visible in this repository.",
     image: github,
     source_code_link: "https://github.com/mgkdante?tab=repositories",
     demo_link: "https://github.com/mgkdante?tab=repositories",
   },
 ];
-
 const contactFormFields = {
   name: {
     label: "Your Name",

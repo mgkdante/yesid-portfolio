@@ -55,6 +55,7 @@ const ComputersCanvas = () => {
         height: "40%",
         width: "100%",
         position: "relative",
+        minHeight: "300px",
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
