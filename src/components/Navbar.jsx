@@ -9,10 +9,15 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const menuRef = useRef(null);
+  const closeRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        closeRef.current !== event.target
+      ) {
         setToggle(false);
       }
     };
@@ -64,6 +69,7 @@ const Navbar = () => {
         </ul>
         <div className="sm:hidden flex items-center flex-1 justify-end pr-5">
           <img
+            ref={closeRef}
             src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[h-28px] cursor-pointer object-contain"
