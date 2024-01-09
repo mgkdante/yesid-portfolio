@@ -6,7 +6,7 @@ import { technologies, techTitle } from "../constants";
 import { motion } from "framer-motion";
 import { textVariant } from "../animation";
 import { styles } from "../styles";
-import { InfoCard } from "./InfoCard.jsx";
+import { InfoCard } from "./subComponents/InfoCard.jsx";
 import Tilt from "react-parallax-tilt";
 
 const Tech = () => {

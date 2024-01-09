@@ -1,9 +1,13 @@
 import React from "react";
 import { githubIcon } from "../assets"; // Import the GitHub icon from your assets
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center items-center gap-4 mb-2">
+    <motion.footer
+      layout
+      className="flex justify-center items-center gap-4 mb-2 mt-10"
+    >
       <p>mgkdante</p>
       <a
         href="https://github.com/mgkdante"
@@ -19,7 +23,7 @@ const Footer = () => {
       >
         Source code
       </a>
-    </footer>
+    </motion.footer>
   );
 };
 

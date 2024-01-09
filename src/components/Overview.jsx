@@ -4,7 +4,7 @@ import { styles } from "../styles";
 import { skills } from "../constants";
 import { fadeIn } from "../animation";
 import { SectionWrapper } from "../hoc/index";
-import { InfoCard } from "./InfoCard.jsx";
+import { InfoCard } from "./subComponents/InfoCard.jsx";
 import { overview } from "../constants/index.js";
 
 const Overview = () => {

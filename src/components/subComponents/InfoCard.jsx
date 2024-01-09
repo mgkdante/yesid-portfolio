@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeIn } from "../animation.js";
+import { fadeIn } from "../../animation.js";
 import React from "react";
 
 export const InfoCard = ({

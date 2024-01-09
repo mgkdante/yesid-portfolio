@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { CardBody, CardContainer, CardItem } from "./3dCard.jsx";
+import { CardBody, CardContainer, CardItem } from "./subComponents/3dCard.jsx";
 
 import { styles } from "../styles";
 import { githubIcon } from "../assets";

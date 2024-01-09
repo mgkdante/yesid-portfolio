@@ -5,7 +5,7 @@ import React, {
   useRef,
   useEffect,
 } from "react";
-import { cn } from "../hoc/cn.js";
+import { cn } from "../../hoc/cn.js";
 
 const MouseEnterContext = createContext(undefined);
 

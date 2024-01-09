@@ -33,6 +33,7 @@ import champlain from "./journey/champlain.png";
 import themsocks from "./journey/themsocks.png";
 import accounting from "./journey/accounting.png";
 import bu from "./journey/BU.png";
+import linkedin from "./linkedin.png";
 
 export {
   logo,
@@ -66,4 +67,5 @@ export {
   themsocks,
   accounting,
   bu,
+  linkedin,
 };

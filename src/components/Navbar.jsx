@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-opacity-60 backdrop-blur-md`}
+      className={`${styles.paddingX} border-1 border-gray-900 border w-full flex items-center fixed top-0 z-20 bg-opacity-60 backdrop-blur-md`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto px-2 md:px-4 lg:px-6 xl:px-8 mx-auto max-w-screen-lg">
         <Link
@@ -33,7 +33,11 @@ const Navbar = () => {
               } hover:font-bold text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.id === "resume" ? (
+                <Link to={`/${nav.id}`}>{nav.title}</Link>
+              ) : (
+                <a href={`/#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -61,7 +65,11 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.id === "resume" ? (
+                    <Link to={`/${nav.id}`}>{nav.title}</Link>
+                  ) : (
+                    <a href={`/#${nav.id}`}>{nav.title}</a>
+                  )}
                 </li>
               ))}
             </ul>

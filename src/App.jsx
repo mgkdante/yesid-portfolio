@@ -1,6 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
-  About,
+  Overview,
   Contact,
   Hero,
   Works,
@@ -8,6 +8,7 @@ import {
   Tech,
   Navbar,
   Footer,
+  Resume,
 } from "./components";
 
 import Particles from "react-tsparticles";
@@ -63,15 +64,23 @@ const App = () => {
         />
         <Navbar />
         <div className="relative z-0 pt-[100px] px-2 md:px-4 lg:px-6 xl:px-8 mx-auto max-w-screen-xl">
-          <LayoutGroup>
-            <Hero />
-            <About />
-            <Experience />
-            <Tech />
-            <Works />
-            <Contact />
-            <Footer />
-          </LayoutGroup>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <LayoutGroup>
+                  <Hero />
+                  <Overview />
+                  <Experience />
+                  <Tech />
+                  <Works />
+                  <Contact />
+                </LayoutGroup>
+              }
+            />
+            <Route exact path="/resume" element={<Resume />} />
+          </Routes>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
