@@ -42,6 +42,12 @@ const Resume = () => {
           ))}
         </div>
         <div>
+          <h2 className="text-2xl font-semibold">Hobbies</h2>
+          {resumeObj.hobbies.map((hobby, index) => (
+            <ExperienceCard key={index} experience={hobby} />
+          ))}
+        </div>
+        <div>
           <h2 className="text-2xl font-semibold">Certifications</h2>
           {Object.entries(groupedCertifications).map(
             ([provider, certs], index) => (
