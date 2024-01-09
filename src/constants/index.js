@@ -56,14 +56,14 @@ const hero = {
   title: "Hi, I'm Yesid",
   role: "An App Developer ",
   description:
-    "from Montreal, Canada, I aspire to help others offer great solutions with a strong focus on user events and maintainable code.",
+    "from Montreal, Canada. I aspire to help others offer great solutions with a strong focus on user events and maintainable code.",
 };
 
 const overview = {
   title: "Overview",
   subtitle: "What I offer",
   description:
-    "Welcome to my portfolio! As a Bishop's University Computer Science alum, I'm passionate about advancing in the ever-evolving tech world. Eager for software development opportunities, I'm committed to contributing to innovation and supporting the growth of communities and businesses in Canada. Here's a showcase of my key skills and areas of growth.",
+    "Welcome to my portfolio! As a Bishop's University Computer Science alumnus, I'm passionate about advancing in the ever-evolving tech world. Eager for software development opportunities, I'm committed to contributing to innovation and supporting the growth of communities and businesses in Canada. Here's a showcase of my key skills and areas of growth.",
 };
 
 const eventsTitle = {

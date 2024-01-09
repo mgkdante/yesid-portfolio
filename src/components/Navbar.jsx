@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
@@ -8,12 +8,33 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+
+    const handleScroll = () => {
+      setToggle(false);
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
-      className={`${styles.paddingX} border-1 border-gray-900 border w-full flex items-center fixed top-0 z-20 bg-opacity-60 backdrop-blur-md`}
+      className={`${styles.paddingX} border-b border-gray-900 w-full flex items-center fixed top-0 z-20 `}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto px-2 md:px-4 lg:px-6 xl:px-8 mx-auto max-w-screen-lg">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto px-2 md:px-4 lg:px-6 xl:px-8 bg-opacity-60 backdrop-blur-md">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -49,9 +70,10 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
           <div
+            ref={menuRef}
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 backdrop-blur-md bg-black bg-opacity-60 absolute top-20 right-0 mx-4 mt-5 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-black backdrop-blur-md bg-opacity-80 absolute top-20 right-0 mx-4 mt-6 min-w-[140px] z-10 rounded-xl border-1 border-gray-900 border`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((nav) => (
