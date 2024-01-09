@@ -414,12 +414,13 @@ const resumeObj = {
     {
       title: "App Development",
       description:
-        "I enjoy spending my free time improving my app development skills and building interesting projects. I have also explored Webflow and created a website: https://www.stylelibrestudios.com/.",
+        "I enjoy spending my free time improving my app development skills and building interesting projects.",
       tasks: [
         "Completed courses on Coursera to deepen my understanding of various web and app development technologies.",
         "Practiced problem-solving and coding skills on HackerRank.",
         "Followed The Odin Project (TOP) curriculum for a comprehensive, community-driven web development learning path.",
-        "Applied learning from TOP to build projects, including this portfolio.",
+        "Applied learning from TOP to build projects, including this portfolio and several Android apps.",
+        "Explored Webflow and created a website: https://stylelibrestudios.com for a client",
       ],
     },
   ],
