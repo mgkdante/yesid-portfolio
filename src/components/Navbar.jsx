@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { styles } from "../styles.js";
+import { navLinks } from "../data/index.js";
+import { logo, menu, close } from "../assets/index.js";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -37,9 +37,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} border-b border-gray-900 w-full flex items-center fixed top-0 z-20 `}
+      className={`${styles.paddingX} border-b border-gray-900 w-full flex items-center fixed top-0 z-20  bg-opacity-60 backdrop-blur-md`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto px-2 md:px-4 lg:px-6 xl:px-8 bg-opacity-60 backdrop-blur-md">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto px-2 md:px-4 lg:px-6 xl:px-8">
         <Link
           to="/"
           className="flex items-center gap-2"

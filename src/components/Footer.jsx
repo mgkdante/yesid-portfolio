@@ -1,5 +1,5 @@
 import React from "react";
-import { githubIcon } from "../assets"; // Import the GitHub icon from your assets
+import { githubIcon } from "../assets/index.js"; // Import the GitHub icon from your assets
 import { motion } from "framer-motion";
 
 const Footer = () => {

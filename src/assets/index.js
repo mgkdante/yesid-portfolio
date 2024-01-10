@@ -35,6 +35,8 @@ import accounting from "./journey/accounting.png";
 import bu from "./journey/BU.png";
 import linkedin from "./linkedin.png";
 
+import loading from "./loading.json";
+
 export {
   logo,
   backend,
@@ -68,4 +70,5 @@ export {
   accounting,
   bu,
   linkedin,
+  loading,
 };
