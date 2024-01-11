@@ -27,7 +27,7 @@ export const resumeObj = {
   languages: ["English", "French", "Spanish"],
   education: [
     {
-      title: "University studies– Bachelor of Sscience in Computer Science",
+      title: "University studies– Bachelor of Science in Computer Science",
       institution: "Bishop's University (Lennoxville)",
       period: "2019 - 2022",
     },
