@@ -1,24 +1,25 @@
-import { EarthCanvas, ComputersCanvas } from "./canvas";
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import Overview from "./Overview.jsx";
-import Tech from "./Tech";
-import Experience from "./Events.jsx";
-import Works from "./Projects.jsx";
-import Contact from "./Contact";
+import EarthCanvas from "./3d/Earth";
+import ComputersCanvas from "./3d/Computer.jsx";
+import SectionWrapper from "./hoc/SectionWrapper.jsx";
+import EmailInput from "./form/EmailInput.jsx";
+import SubmitButton from "./form/SubmitButton.jsx";
+import TextareaInput from "./form/TextareaInput.jsx";
+import TextInput from "./form/TextInput.jsx";
 import Footer from "./Footer.jsx";
-import Resume from "./Resume.jsx";
+import Navbar from "./NavBar/Navbar.jsx";
+import SectionDescription from "./ui/SectionDescription.jsx";
+import SectionTitle from "./ui/SectionTitle.jsx";
 
 export {
-  Hero,
-  Navbar,
-  Overview,
-  Tech,
-  Experience,
-  Works,
-  Contact,
   EarthCanvas,
   ComputersCanvas,
+  SectionWrapper,
+  EmailInput,
+  SubmitButton,
+  TextareaInput,
+  TextInput,
+  Navbar,
   Footer,
-  Resume,
+  SectionDescription,
+  SectionTitle,
 };

@@ -23,11 +23,11 @@ body {
     display: block;
 }
 
-/*canvas {
+/*3d {
  overflow : scroll;
 }*/
 
-/* canvas- styles */
+/* 3d- styles */
 .canvas-loader {
     font-size: 10px;
     width: 1em;
