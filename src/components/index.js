@@ -6,7 +6,7 @@ import SubmitButton from "./form/SubmitButton.jsx";
 import TextareaInput from "./form/TextareaInput.jsx";
 import TextInput from "./form/TextInput.jsx";
 import Footer from "./Footer.jsx";
-import Navbar from "./Navbar.jsx";
+import Navbar from "./NavBar/Navbar.jsx";
 import SectionDescription from "./ui/SectionDescription.jsx";
 import SectionTitle from "./ui/SectionTitle.jsx";
 

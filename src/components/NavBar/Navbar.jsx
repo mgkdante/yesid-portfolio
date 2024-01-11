@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-import { styles } from "../styles.js";
-import { navLinks } from "../data/index.js";
-import { logo, menu, close } from "../assets/index.js";
+import { styles } from "../../styles.js";
+import { navLinks } from "../../data/index.js";
+import { logo, menu, close } from "../../assets/index.js";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -60,9 +61,13 @@ const Navbar = () => {
               onClick={() => setActive(nav.title)}
             >
               {nav.id === "resume" ? (
-                <Link to={`/${nav.id}`}>{nav.title}</Link>
+                <Link to={`/${nav.id}`} onClick={() => window.scrollTo(0, 0)}>
+                  {nav.title}
+                </Link>
               ) : (
-                <a href={`/#${nav.id}`}>{nav.title}</a>
+                <HashLink smooth to={`/#${nav.id}`}>
+                  {nav.title}
+                </HashLink>
               )}
             </li>
           ))}
@@ -94,9 +99,16 @@ const Navbar = () => {
                   }}
                 >
                   {nav.id === "resume" ? (
-                    <Link to={`/${nav.id}`}>{nav.title}</Link>
+                    <Link
+                      to={`/${nav.id}`}
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      {nav.title}
+                    </Link>
                   ) : (
-                    <a href={`/#${nav.id}`}>{nav.title}</a>
+                    <HashLink smooth to={`/#${nav.id}`}>
+                      {nav.title}
+                    </HashLink>
                   )}
                 </li>
               ))}
