@@ -2,6 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../ui/Loader.jsx";
+import { sendGAEvent } from "../../utils/gaEvents.js";
 
 const Computer = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -31,7 +32,6 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia(`(max-width: 700px)`);
-
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (e) => {
@@ -45,6 +45,10 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  const handleCanvasClick = () => {
+    sendGAEvent("canvas_clicked", "ComputersCanvas");
+  };
+
   return (
     <Canvas
       frameloop="demand"
@@ -56,7 +60,9 @@ const ComputersCanvas = () => {
         width: "100%",
         position: "relative",
         minHeight: "300px",
+        cursor: "grab",
       }}
+      onClick={handleCanvasClick}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls

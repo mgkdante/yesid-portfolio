@@ -2,6 +2,7 @@ import { styles } from "../../styles.js";
 import { ComputersCanvas } from "../../components";
 import HeroTextCard from "./HeroTextCard";
 import ScrollButton from "./ScrollButton";
+import { sendGAEvent } from "../../utils/gaEvents.js";
 
 const HeroSection = () => {
   return (

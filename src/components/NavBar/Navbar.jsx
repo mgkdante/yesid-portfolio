@@ -5,6 +5,7 @@ import { HashLink } from "react-router-hash-link";
 import { styles } from "../../styles.js";
 import { navLinks } from "../../data/index.js";
 import { logo, menu, close } from "../../assets/index.js";
+import { sendGAEvent } from "../../utils/gaEvents";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -36,6 +37,11 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleNavClick = (navTitle) => {
+    setActive(navTitle);
+    sendGAEvent("navigation_clicked", { action: `Clicked on ${navTitle}` });
+  };
+
   return (
     <nav
       className={`${styles.paddingX} border-b border-gray-900 w-full flex items-center fixed top-0 z-20  bg-opacity-60 backdrop-blur-md`}
@@ -58,7 +64,7 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "font-bold" : "font-medium"
               } hover:font-bold text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => handleNavClick(nav.title)}
             >
               {nav.id === "resume" ? (
                 <Link to={`/${nav.id}`} onClick={() => window.scrollTo(0, 0)}>
@@ -78,7 +84,12 @@ const Navbar = () => {
             src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[h-28px] cursor-pointer object-contain"
-            onClick={() => setToggle(!toggle)}
+            onClick={() => {
+              setToggle(!toggle);
+              sendGAEvent("menu_toggled", {
+                action: `Menu ${toggle ? "Closed" : "Opened"}`,
+              });
+            }}
           />
           <div
             ref={menuRef}
@@ -95,7 +106,7 @@ const Navbar = () => {
                   } hover:font-bold font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    handleNavClick(nav.title);
                   }}
                 >
                   {nav.id === "resume" ? (

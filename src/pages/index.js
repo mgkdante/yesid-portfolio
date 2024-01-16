@@ -6,6 +6,7 @@ import Works from "./Projects/Projects.jsx";
 import Contact from "./Contact/Contact.jsx";
 import Resume from "./Resume/Resume.jsx";
 import MainContent from "./MainContent.jsx";
+import MainContentWithGA from "./MainContentWithGA.jsx";
 
 export {
   Hero,
@@ -16,4 +17,5 @@ export {
   Contact,
   Resume,
   MainContent,
+  MainContentWithGA,
 };

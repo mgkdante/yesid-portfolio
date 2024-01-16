@@ -7,6 +7,7 @@ import {
 } from "../../components/ui/3dCard.jsx";
 import { githubIcon } from "../../assets/index.js";
 import React from "react";
+import { sendGAEvent } from "../../utils/gaEvents";
 
 const ProjectCard = ({ index, name, description, image, source_code_link }) => {
   const handleIconClick = (event) => {
@@ -15,7 +16,7 @@ const ProjectCard = ({ index, name, description, image, source_code_link }) => {
   };
 
   const handleCardClick = () => {
-    console.log("card clicked");
+    sendGAEvent("project_card_clicked", { card_name: name });
     window.open(demo_link, "_blank").focus();
   };
 

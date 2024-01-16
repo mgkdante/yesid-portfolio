@@ -6,12 +6,8 @@ export const projectsTitle = {
   description: `As a hobbyist developer, I have developed some projects using
                 different technologies. From this portfolio using React and Vite to
                 some projects using vanilla JavaScript and CSS.
-                <br />
-                <br />
                 In addition to web development, I've also worked on some Android
                 projects using Android Compose.
-                <br />
-                <br />
                 These projects have been a great way for me to develop my skills as a
                 developer and explore my passion for creating innovative solutions.
                 I'm excited to continue working on new projects and pushing the
