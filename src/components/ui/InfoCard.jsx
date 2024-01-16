@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "./animation.js";
 import React from "react";
+import { sendGAEvent } from "../../utils/gaEvents.js";
 
 export const InfoCard = ({
   index,
@@ -15,9 +16,13 @@ export const InfoCard = ({
   openCardIndex,
   setOpenCardIndex,
 }) => {
+  const handleCardClick = (cardTitle) => {
+    sendGAEvent("card_clicked", { action: cardTitle });
+  };
   const onClick = () => {
     if (isClickable) {
       setOpenCardIndex(openCardIndex === index ? null : index);
+      handleCardClick(title);
     }
   };
 

@@ -10,27 +10,20 @@ import React from "react";
 import { sendGAEvent } from "../../utils/gaEvents";
 
 const ProjectCard = ({ index, name, description, image, source_code_link }) => {
-  const handleIconClick = (event) => {
+  const handleProjectClick = (event, name) => {
+    sendGAEvent("project_clicked", { action: name });
     event.stopPropagation();
     window.open(source_code_link, "_blank").focus();
-  };
-
-  const handleCardClick = () => {
-    sendGAEvent("project_card_clicked", { card_name: name });
-    window.open(demo_link, "_blank").focus();
   };
 
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <CardContainer className="inter-var">
-        <CardBody
-          className="flex flex-col justify-between items-center bg-tertiary bg-opacity-80 relative group/card shadow-card w-full xs:w-[360px] rounded-2xl p-5"
-          onClick={handleCardClick}
-        >
+        <CardBody className="flex flex-col justify-between items-center bg-tertiary bg-opacity-80 relative group/card shadow-card w-full xs:w-[360px] rounded-2xl p-5">
           <CardItem
             translateZ="100"
             className="w-full h-[230px] relative cursor-pointer hover:shadow-card"
-            onClick={handleIconClick} // Add this line
+            onClick={(event) => handleProjectClick(event, name)} // Add this line
           >
             <img
               src={image}
