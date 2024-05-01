@@ -17,7 +17,7 @@ import sqlserver from "./tech/sql-server.png";
 import gem from "./journey/gem.png";
 
 import todoapp from "./projects/todo-app.png";
-import habitapp from "./projects/habit-app.png";
+import styleslibre from "./projects/styleslibre.png";
 import github from "./projects/github.png";
 
 import computer from "./journey/computer-vintage.png";
@@ -54,7 +54,7 @@ export {
   gem,
   sqlserver,
   todoapp,
-  habitapp,
+  styleslibre,
   github,
   computer,
   dialUp,

@@ -1,4 +1,4 @@
-import { github, habitapp, todoapp } from "../assets/index.js";
+import { github, styleslibre, todoapp } from "../assets/index.js";
 
 export const projectsTitle = {
   title: "Projects",
@@ -16,20 +16,20 @@ export const projectsTitle = {
 
 export const projects = [
   {
+    name: "Style Libre Studios",
+    description:
+      "Style Libre Studios in Montreal is a hub of visual creativity, specializing in promotional and music videos, as well as photography. The studio excels in crafting compelling narratives that capture the essence of each subject, delivering high-quality, emotive content that surpasses expectations.",
+    image: styleslibre,
+    source_code_link: "https://www.stylelibrestudios.com/",
+    demo_link: "https://www.stylelibrestudios.com/",
+  },
+  {
     name: "Todo App",
     description:
       "A simple todo list application developed using vanilla JavaScript and CSS. The application allows users to create and edit projects, as well as tasks within those projects. All data is saved in localStorage for persistence. Webpack was used for bundling the application.",
     image: todoapp,
     source_code_link: "https://github.com/mgkdante/todo-app",
     demo_link: "http://mgkdante.github.io/todo-app",
-  },
-  {
-    name: "Android Habits App",
-    description:
-      "An Android application developed using Jetpack Compose and following SOLID principles. The application allows users to track their habits, marking tasks as done for each day and keeping a streak of completed tasks. It uses MVVM architecture, Room for local data storage, Dagger Hilt for dependency injection, and Kotlin Coroutines for asynchronous programming.",
-    image: habitapp,
-    source_code_link: "https://github.com/mgkdante/HabitsApps",
-    demo_link: "https://github.com/mgkdante/HabitsApps",
   },
   {
     name: "Github Repo",
