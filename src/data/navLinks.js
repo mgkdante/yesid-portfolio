@@ -3,10 +3,10 @@ export const navLinks = [
     id: "overview",
     title: "Overview",
   },
-  {
+  /*{
     id: "events",
     title: "Events",
-  },
+  },*/
   {
     id: "tech",
     title: "Tech",
@@ -23,4 +23,4 @@ export const navLinks = [
     id: "resume",
     title: "Resume",
   },
-];
+]

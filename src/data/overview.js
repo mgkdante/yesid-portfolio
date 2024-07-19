@@ -1,11 +1,11 @@
-import { backend, sql, web } from "../assets/index.js";
+import { backend, sql, web } from "../assets/index.js"
 
 export const overview = {
   title: "Overview",
   subtitle: "What I offer",
   description:
     "Welcome to my portfolio! As a Bishop's University Computer Science alumnus, I'm passionate about advancing in the ever-evolving tech world. Eager for software development opportunities, I'm committed to contributing to innovation and supporting the growth of communities and businesses in Canada. Here's a showcase of my key skills and areas of growth.",
-};
+}
 
 export const skills = [
   {
@@ -19,6 +19,16 @@ export const skills = [
       "I'm aiming to develop applications that address user problems, understand their needs, and ensure a comfortable user events.",
   },
   {
+    title: "Back-End Developer",
+    icon: backend,
+    whyTitle: "What I love about the Back-End",
+    why: "I appreciate the Back-End for its abstract, non-visual nature, where beautiful and functional code can significantly impact users. I'm patiently striving to become a top-tier back-end developer capable of changing lives with my work.",
+    whatTitle: "What I have tried",
+    what: "My events in back-end development, though limited, includes working with frameworks like Django Rest Framework and ExpressJS, enough to build a REST API and connect it to a database. I'm enhancing my skills through The Odin Project, confident that soon I'll be capable of developing a complete back-end application.",
+    challenge:
+      "My long term goal is to become a seasoned full-stack developer.",
+  },
+  {
     title: "SQL Developer",
     icon: sql,
     whyTitle: "What I love about SQL",
@@ -28,14 +38,4 @@ export const skills = [
     challenge:
       "Really looking forward to make SQL second nature and be able to craft beautiful apps from the database to the ui ",
   },
-  {
-    title: "Back-End Developer",
-    icon: backend,
-    whyTitle: "What I love about the Back-End",
-    why: "I appreciate the Back-End for its abstract, non-visual nature, where beautiful and functional code can significantly impact users. I'm patiently striving to become a top-tier back-end developer capable of changing lives with my work.",
-    whatTitle: "What I have tried",
-    what: "My events in back-end development, though limited, includes working with frameworks like Django Rest Framework and ExpressJS, enough to build a REST API and connect it to a database. I'm enhancing my skills through The Odin Project, confident that soon I'll be capable of developing a complete back-end application.",
-    challenge:
-      "My goal this year 2024, is to build a full-stack that solves an actual issue.",
-  },
-];
+]
