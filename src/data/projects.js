@@ -1,4 +1,4 @@
-import { github, styleslibre, todoapp } from "../assets/index.js";
+import { winningMindset, battleship, todoapp } from "../assets/index.js"
 
 export const projectsTitle = {
   title: "Projects",
@@ -12,16 +12,16 @@ export const projectsTitle = {
                 developer and explore my passion for creating innovative solutions.
                 I'm excited to continue working on new projects and pushing the
                 boundaries of what's possible with web and mobile development.`,
-};
+}
 
 export const projects = [
   {
-    name: "Style Libre Studios",
+    name: "Battleship",
     description:
-      "Style Libre Studios in Montreal is a hub of visual creativity, specializing in promotional and music videos, as well as photography. The studio excels in crafting compelling narratives that capture the essence of each subject, delivering high-quality, emotive content that surpasses expectations.",
-    image: styleslibre,
-    source_code_link: "https://www.stylelibrestudios.com/",
-    demo_link: "https://www.stylelibrestudios.com/",
+      "This is a classic naval strategy game implemented in JavaScript using ES6 modules. Play against a computer opponent with options for manual or random ship placement.",
+    image: battleship,
+    source_code_link: "https://github.com/mgkdante/Battleship",
+    demo_link: "https://mgkdante.github.io/Battleship/",
   },
   {
     name: "Todo App",
@@ -32,11 +32,11 @@ export const projects = [
     demo_link: "http://mgkdante.github.io/todo-app",
   },
   {
-    name: "Github Repo",
+    name: "Habits App for Android",
     description:
-      "A collection of various projects hosted on GitHub. The projects use a variety of technologies and frameworks. I'm often working on new projects, which are visible in this repository.",
-    image: github,
-    source_code_link: "https://github.com/mgkdante?tab=repositories",
-    demo_link: "https://github.com/mgkdante?tab=repositories",
+      "This Android application helps you track your goals and milestones, fostering a winning mindset. It's built with Jetpack Compose and utilizes modern Android development practices.",
+    image: winningMindset,
+    source_code_link: "https://github.com/mgkdante/HabitsApps",
+    demo_link: "https://github.com/mgkdante/HabitsApps",
   },
-];
+]
