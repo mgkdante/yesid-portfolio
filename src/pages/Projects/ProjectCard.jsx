@@ -1,20 +1,20 @@
-import { motion } from "framer-motion";
-import { fadeIn } from "../../components/ui/animation.js";
+import { motion } from "framer-motion"
+import { fadeIn } from "../../components/ui/animation.js"
 import {
   CardBody,
   CardContainer,
   CardItem,
-} from "../../components/ui/3dCard.jsx";
-import { githubIcon } from "../../assets/index.js";
-import React from "react";
-import { sendGAEvent } from "../../utils/gaEvents";
+} from "../../components/ui/3dCard.jsx"
+import { githubIcon } from "../../assets/index.js"
+import React from "react"
+import { sendGAEvent } from "../../utils/gaEvents"
 
 const ProjectCard = ({ index, name, description, image, source_code_link }) => {
   const handleProjectClick = (event, name) => {
-    sendGAEvent("project_clicked", { action: name });
-    event.stopPropagation();
-    window.open(source_code_link, "_blank").focus();
-  };
+    sendGAEvent("project_clicked", { action: name })
+    event.stopPropagation()
+    window.open(source_code_link, "_blank").focus()
+  }
 
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -28,7 +28,7 @@ const ProjectCard = ({ index, name, description, image, source_code_link }) => {
             <img
               src={image}
               alt="project_image"
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-contain rounded-2xl"
             />
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <CardItem
@@ -62,7 +62,7 @@ const ProjectCard = ({ index, name, description, image, source_code_link }) => {
         </CardBody>
       </CardContainer>
     </motion.div>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard
