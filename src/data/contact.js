@@ -1,6 +1,6 @@
 export const contactTitle = {
   title: "Contact",
-  subtitle: "Get in touch",
+  subtitle: "Let's talk about job opportunities",
 };
 
 export const contactFormFields = {

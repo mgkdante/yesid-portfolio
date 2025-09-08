@@ -147,7 +147,7 @@ export const events = [
       "Learn new technologies such as Android development, web development with React, Vite, Tailwind CSS, and more.",
       "Build fun and interesting projects in my free time.",
       "Participate in code reviews and provide constructive feedback to other developers.",
-      "Freelance when there is clientele.",
+      "Actively seeking full-time opportunities.",
     ],
   },
 ];
