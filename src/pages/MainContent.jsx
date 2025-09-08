@@ -23,7 +23,7 @@ const MainContent = () => {
             element={
               <LayoutGroup>
                 <Hero />
-                <Overview />${/*<Experience />*/}
+                <Overview />{/*<Experience />*/}
                 <Tech />
                 <Works />
                 <Contact />

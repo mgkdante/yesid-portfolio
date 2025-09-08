@@ -12,7 +12,9 @@ import {
 export const techTitle = {
   title: "Stack",
   subtitle: "knowledge",
+  description: "My stack reflects where I started and where I’m heading. I began with databases and SQL, and now I’m actively pivoting into application and web development. While I’m not a master of every tool yet, I continuously learn and sharpen my skills through projects and practice. Each technology here represents both my current ability and my commitment to becoming stronger as a developer every day.",
 };
+
 
 export const technologies = [
   {
