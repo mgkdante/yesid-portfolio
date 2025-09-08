@@ -83,7 +83,7 @@ const Navbar = () => {
             ref={closeRef}
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[h-28px] cursor-pointer object-contain"
+            className="w-[28px] h-[28px] cursor-pointer object-contain"
             onClick={() => {
               setToggle(!toggle);
               sendGAEvent("menu_toggled", {
