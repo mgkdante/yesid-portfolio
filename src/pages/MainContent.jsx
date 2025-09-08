@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import { Navbar, Footer } from "../components"
 import {
   Overview,
@@ -13,6 +13,7 @@ import {
 import { LayoutGroup } from "framer-motion"
 
 const MainContent = () => {
+  const location = useLocation()
   return (
     <>
       <Navbar />
@@ -23,7 +24,8 @@ const MainContent = () => {
             element={
               <LayoutGroup>
                 <Hero />
-                <Overview />${/*<Experience />*/}
+                <Overview />
+                {/* <Experience /> */}
                 <Tech />
                 <Works />
                 <Contact />
