@@ -12,6 +12,7 @@ includes a contact form for further communication.
 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
+- [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Deployment](#deployment)
 
@@ -37,6 +38,20 @@ To install the necessary dependencies, run the following command:
 ```bash
 npm install
 ```
+
+## Environment Variables
+
+Copy `.env.example` to `.env` and fill in your EmailJS credentials:
+
+```bash
+cp .env.example .env
+```
+
+The following variables are required:
+
+- `VITE_EMAILJS_SERVICE_ID`
+- `VITE_EMAILJS_TEMPLATE_ID`
+- `VITE_EMAILJS_PUBLIC_KEY`
 
 ## Usage
 

@@ -8,10 +8,16 @@ const useFormSubmit = (form) => {
     e.preventDefault();
     setLoading(true);
 
+    const {
+      VITE_EMAILJS_SERVICE_ID: serviceId,
+      VITE_EMAILJS_TEMPLATE_ID: templateId,
+      VITE_EMAILJS_PUBLIC_KEY: publicKey,
+    } = import.meta.env;
+
     emailjs
       .send(
-        "service_nuw6z8a",
-        "template_cbngh99",
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: "Yesid Otalora",
@@ -19,7 +25,7 @@ const useFormSubmit = (form) => {
           to_email: "contact@yesid.dev",
           message: form.message,
         },
-        "WNltWCBp5T28Qr4Wa",
+        publicKey,
       )
       .then(
         () => {
