@@ -13,6 +13,7 @@ import javascript from "./tech/javascript.png"
 import nodejs from "./tech/nodejs.png"
 import reactjs from "./tech/reactjs.png"
 import sqlserver from "./tech/sql-server.png"
+import kotlin from "./tech/kotlin.png"
 
 import gem from "./journey/gem.png"
 
@@ -53,6 +54,7 @@ export {
   reactjs,
   gem,
   sqlserver,
+  kotlin,
   todoapp,
   battleship,
   winningMindset,

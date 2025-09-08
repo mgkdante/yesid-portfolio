@@ -1,19 +1,19 @@
 export const contactTitle = {
   title: "Contact",
-  subtitle: "Get in touch",
+  subtitle: "Let’s Connect",
 };
 
 export const contactFormFields = {
   name: {
-    label: "Your Name",
-    placeholder: "What's your good name?",
+    label: "Full Name",
+    placeholder: "Enter your name",
   },
   email: {
-    label: "Your Email",
-    placeholder: "What's your web address?",
+    label: "Email Address",
+    placeholder: "Enter your email",
   },
   message: {
-    label: "Your Message",
-    placeholder: "What you want to say?",
+    label: "Message",
+    placeholder: "Tell me about opportunities or how we can collaborate",
   },
 };

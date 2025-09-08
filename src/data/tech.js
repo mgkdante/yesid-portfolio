@@ -6,6 +6,7 @@ import {
   nodejs,
   reactjs,
   sqlserver,
+  kotlin,
 } from "../assets/index.js";
 
 export const techTitle = {
@@ -41,5 +42,9 @@ export const technologies = [
   {
     name: "SQL Server",
     icon: sqlserver,
+  },
+  {
+    name: "Kotlin",
+    icon: kotlin,
   },
 ];
